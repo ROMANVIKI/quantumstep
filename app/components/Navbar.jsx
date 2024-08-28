@@ -1,51 +1,26 @@
 'use client'
-import { useState } from "react";
+import MobileNav from "./MobileNav";
 import Link from "next/link";
 
 const Navbar = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
-
   return (
-    <div className="navbar bg-base-100 fixed top-0 w-full z-50">
-      <div className="flex items-center justify-between px-4 py-2">
-        <a className="btn btn-ghost text-xl">QuantumStep IT</a>
-        <button
-          className="block lg:hidden px-2 py-1 text-gray-600"
-          onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-        >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d={isDropdownOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
-            />
-          </svg>
-        </button>
-        <div className={`lg:flex lg:items-center lg:space-x-4 ${isDropdownOpen ? "block" : "hidden"} lg:block`}>
-          <ul className="menu menu-horizontal px-1 space-y-2 lg:space-y-0 lg:flex lg:space-x-4">
+    <div>
+      <MobileNav />
+      {/* <div className="hidden max-md:block navbar bg-base-100 fixed top-0 w-full z-50">
+        <div className="flex-1">
+          <a className="btn btn-ghost text-xl">QuantumStep IT</a>
+        </div>
+        <div className="flex-none">
+          <ul className="menu menu-horizontal px-1">
             <li>
               <Link href="/">Home</Link>
             </li>
             <li className="relative group">
-              <button
-                className="flex items-center cursor-pointer"
-                onClick={toggleDropdown}
-              >
+              <button className="flex items-center cursor-pointer">
                 Courses
                 <span className="ml-2 text-gray-500">
                   <svg
-                    className={`w-4 h-4 transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : ""}`}
+                    className="w-4 h-4 transition-transform duration-300"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -60,12 +35,8 @@ const Navbar = () => {
                   </svg>
                 </span>
               </button>
-              <div
-                className={`absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg ${
-                  isDropdownOpen ? "block" : "hidden"
-                } lg:mt-0 lg:relative lg:top-auto lg:left-auto lg:w-auto lg:bg-transparent lg:shadow-none lg:flex lg:flex-col lg:space-y-2`}
-              >
-                <ul className="p-2 lg:p-0 lg:flex lg:flex-col">
+              <div className="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg">
+                <ul className="p-2">
                   <li className="py-2 px-4 hover:bg-gray-100 hover:text-blue-500">
                     <Link href="/courses/python">Python</Link>
                   </li>
@@ -95,7 +66,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
