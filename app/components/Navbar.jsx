@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <>
       <MobileNav />
-      <div className="navbar max-md:hidden bg-base-100 fixed top-0 w-full z-50">
+      <div className="navbar max-md:hidden  bg-base-100 fixed top-0 w-full z-50">
         <div className="flex-1">
           <a className="btn btn-ghost text-xl">QuantumStep IT</a>
         </div>

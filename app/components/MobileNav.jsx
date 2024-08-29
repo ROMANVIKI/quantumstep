@@ -72,7 +72,7 @@ const MobileNav = () => {
               Courses
               <span className="ml-2 text-gray-500">
                 <svg
-                  className={`w-4 h-4 transition-transform duration-300 ${isNavOpen ? "rotate-180" : ""}`}
+                  className={`w-4 h-4 transition-transform duration-300 ${isCoursesOpen ? "rotate-180" : ""}`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
