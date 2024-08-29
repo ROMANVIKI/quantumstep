@@ -4,10 +4,15 @@ import Link from "next/link";
 
 const MobileNav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isCoursesOpen, setIsCoursesOpen] = useState(false)
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
+
+  const openCourses = () => {
+    setIsCoursesOpen(!isCoursesOpen)
+  }
 
   return (
     <>
@@ -63,7 +68,7 @@ const MobileNav = () => {
             <Link href="/" onClick={() => setIsNavOpen(false)}>Home</Link>
           </li>
           <li className="relative group">
-            <button className="flex items-center">
+            <button className="flex items-center" onClick={openCourses}>
               Courses
               <span className="ml-2 text-gray-500">
                 <svg
@@ -83,20 +88,20 @@ const MobileNav = () => {
               </span>
             </button>
             <div
-              className={`absolute top-full left-0 w-full bg-white rounded-lg shadow-lg ${isNavOpen ? "block" : "hidden"}`}
+              className={`absolute top-full left-0 w-full bg-white rounded-lg shadow-lg ${isCoursesOpen ? "block" : "hidden"}`}
             >
               <ul className="p-2 space-y-2">
                 <li className="py-2 px-4 hover:bg-gray-100 hover:text-blue-500">
-                  <Link href="/courses/python" onClick={() => setIsNavOpen(false)}>Python</Link>
+                  <Link href="/courses/python" onClick={() => setIsCoursesOpen(false)}>Python</Link>
                 </li>
                 <li className="py-2 px-4 hover:bg-gray-100 hover:text-blue-500">
-                  <Link href="/courses/sql" onClick={() => setIsNavOpen(false)}>SQL</Link>
+                  <Link href="/courses/sql" onClick={() => setIsCoursesOpen(false)}>SQL</Link>
                 </li>
                 <li className="py-2 px-4 hover:bg-gray-100 hover:text-blue-500">
-                  <Link href="/courses/databases" onClick={() => setIsNavOpen(false)}>Databases</Link>
+                  <Link href="/courses/databases" onClick={() => setIsCoursesOpen(false)}>Databases</Link>
                 </li>
                 <li className="py-2 px-4 hover:bg-gray-100 hover:text-blue-500">
-                  <Link href="/courses/docker" onClick={() => setIsNavOpen(false)}>Docker</Link>
+                  <Link href="/courses/docker" onClick={() => setIsCoursesOpen(false)}>Docker</Link>
                 </li>
               </ul>
             </div>
