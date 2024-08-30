@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import React from "react";
 import expertImage from "../../public/expert-instructors.jpeg";
@@ -18,8 +18,14 @@ const QuantumAcademy = () => {
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-blue-600">
           Why Choose Quantum Academy?
         </h2>
-        <div className="space-y-8">
-          {/* Key Benefits */}
+      </motion.div>
+      <div className="space-y-8">
+        {/* Key Benefits */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.2 }}
+        >
           <div className="bg-white/70 p-6 rounded-lg shadow-md flex items-center max-sm:flex-col max-sm:text-center fade-in">
             <Image
               src={practicalImage}
@@ -38,7 +44,12 @@ const QuantumAcademy = () => {
               </p>
             </div>
           </div>
-
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.3 }}
+        >
           <div className="bg-white/70 p-6 rounded-lg shadow-md flex items-center max-sm:flex-col max-sm:text-center fade-in">
             <Image
               src={expertImage}
@@ -58,7 +69,12 @@ const QuantumAcademy = () => {
               </p>
             </div>
           </div>
-
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.4 }}
+        >
           <div className="bg-white/70 p-6 rounded-lg shadow-md flex items-center max-sm:flex-col max-sm:text-center fade-in">
             <Image
               src={liveImpImage}
@@ -77,7 +93,12 @@ const QuantumAcademy = () => {
               </p>
             </div>
           </div>
-
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.5 }}
+        >
           <div className="bg-white/70 p-6 rounded-lg shadow-md flex items-center max-sm:flex-col max-sm:text-center fade-in">
             <Image
               src={modelCertImage}
@@ -96,8 +117,8 @@ const QuantumAcademy = () => {
               </p>
             </div>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </div>
   );
 };

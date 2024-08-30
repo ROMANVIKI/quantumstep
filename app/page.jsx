@@ -2,6 +2,7 @@ import Navbar from "@/app/components/Navbar";
 import Hero from "./components/Hero";
 import QuantumAcademy from "./components/QuantumAcademy";
 import { Promises } from "./components/Promises";
+import Footer from './components/Footer'
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
         <Promises />
       </div>
         <QuantumAcademy/>
+        <Footer/>
     </main>
+
   );
 }

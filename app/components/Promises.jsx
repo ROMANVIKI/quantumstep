@@ -5,17 +5,22 @@ import { useRef } from "react";
 
 export const Promises = () => {
   return (
-    <motion.div
-    initial={{ opacity: 0, scale: 0.5 }}
-    whileInView={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 1 }}
-
-    >
-      <div className="mt-12 max-sm:mt-[280px] max-sm:text-center p-6 md:p-10 rounded-lg shadow-lg max-w-4xl mx-auto text-gray-800">
+    <div className="mt-12 max-sm:mt-[280px] max-sm:text-center p-6 md:p-10 rounded-lg shadow-lg max-w-4xl mx-auto text-gray-800">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      >
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-blue-600">
           Our Assurance
         </h2>
-        <div className="space-y-8">
+      </motion.div>
+      <div className="space-y-8">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.2 }}
+        >
           {/* Practical Training */}
           <div className="bg-white/70 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold text-blue-600">
@@ -29,8 +34,14 @@ export const Promises = () => {
               the practical skills needed to excel.
             </p>
           </div>
+        </motion.div>
 
-          {/* Flexible Training */}
+        {/* Flexible Training */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.3 }}
+        >
           <div className="bg-white/70 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold text-blue-600">
               Flexible Training
@@ -42,8 +53,14 @@ export const Promises = () => {
               work best for you.
             </p>
           </div>
+        </motion.div>
 
-          {/* Hands-On Training */}
+        {/* Hands-On Training */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.4 }}
+        >
           <div className="bg-white/70 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold text-blue-600">
               Hands-On Training
@@ -55,8 +72,14 @@ export const Promises = () => {
               every student is equipped to succeed in their chosen field.
             </p>
           </div>
+        </motion.div>
 
-          {/* 100% Job Guarantee */}
+        {/* 100% Job Guarantee */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.5 }}
+        >
           <div className="bg-white/70 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold text-blue-600">
               100% Job Guarantee
@@ -68,8 +91,8 @@ export const Promises = () => {
               you to confidently tackle projects in your career.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 };
