@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
+
 const MobileNav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isCoursesOpen, setIsCoursesOpen] = useState(false)
