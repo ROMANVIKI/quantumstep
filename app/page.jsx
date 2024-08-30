@@ -1,5 +1,6 @@
 import Navbar from "@/app/components/Navbar";
 import Hero from "./components/Hero";
+import QuantumAcademy from "./components/QuantumAcademy";
 import { Promises } from "./components/Promises";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <div className="pt-32 pb-16 max-sm:pb-24 px-4 md:px-8 bg-gradient-to-r from-pink-100 via-white to-blue-100 text-gray-800 shadow-lg shadow-pink-200/50 rounded-lg">
         <Hero />
         <Promises />
+        <QuantumAcademy/>
       </div>
     </main>
   );

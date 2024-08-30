@@ -2,7 +2,7 @@ import React from "react";
 
 export const Promises = () => {
   return (
-    <div className="mt-12 max-sm:mt-[280px] p-6 md:p-10 rounded-lg shadow-lg max-w-4xl mx-auto text-gray-800">
+    <div className="mt-12 max-sm:mt-[280px] max-sm:text-center p-6 md:p-10 rounded-lg shadow-lg max-w-4xl mx-auto text-gray-800">
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-blue-600">
         Our Assurance
       </h2>
