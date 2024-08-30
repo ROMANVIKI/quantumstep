@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 max-sm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h4 className="text-xl font-semibold mb-4 max-sm:text-lg">
-              Quantum Academy
+              QuantumStep IT
             </h4>
             <p className="text-gray-300 max-sm:text-sm">
               Empowering your future with the skills you need to succeed in the
@@ -93,7 +93,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 text-center text-gray-400 max-sm:text-sm">
-          <p>&copy; {new Date().getFullYear()} Quantum Academy. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} QuantumStep IT. All rights reserved.</p>
         </div>
       </div>
     </footer>

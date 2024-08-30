@@ -16,7 +16,7 @@ const QuantumAcademy = () => {
         transition={{ duration: 1 }}
       >
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-blue-600">
-          Why Choose Quantum Academy?
+          Why Choose QuantumStep IT?
         </h2>
       </motion.div>
       <div className="space-y-8">
